@@ -1,0 +1,591 @@
+*
+  margin: 0px
+  padding: 0px 
+  box-sizing: border-box
+a
+  text-decoration: none !important
+
+//navbar
+
+nav
+  height: 50px
+  box-shadow: 0 .1rem 1rem -.1rem grey
+  transition: height 300ms ease-in-out
+.navbar-toggle
+  border: none
+  &:hover,&:focus
+    border-radius: 2px
+    background: rgba(black,.7) !important
+    .icon-bar
+      background: #fff
+  .shift
+    width: 75%
+    margin-left: auto
+.login
+  font-size: 1.8rem
+  line-height: 3.6rem
+  padding: 0
+  color: grey
+  &:hover,&:focus
+    background: none !important
+.navbar-brand
+  font-size: 2.5rem
+  font-weight: 400
+.club
+  font-size: 2rem
+  font-weight: 100
+.collapse
+  background: darken(white,10%)
+.form-group
+  position: relative
+.search-input
+  .form-control
+    width: 88%
+.nav-form, .nav-search, .form-input
+  border: none
+  background: none
+  outline: none
+  box-shadow: none
+  padding: .2rem
+  &:focus
+    outline: none
+    box-shadow: none
+  &:focus + .expand
+    &:after
+      visibility: visible
+      transform: scaleX(1)
+.expand
+  position: relative
+  border-bottom: 1px solid #ccc
+  &:after
+    content: ""
+    position: absolute
+    bottom: -2px
+    left: 0
+    width: 100%
+    height: 2px
+    background: teal
+    visibility: hidden
+    transform: scaleX(0)
+    transition: all 200ms ease-in-out
+.zmdi
+  font-size: 2.5rem
+.zmdi-account
+  font-size: 2.5rem
+  line-height: 3.3rem
+.search-btn
+  font-size: 2rem
+  color: rgba(black,.5)
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  right: 0px
+ul.nav.navbar-nav
+  li
+    a
+      background: none
+      padding: 11px
+      margin: 0 5px
+      &:hover
+        border-left: 3px solid teal
+    .active
+      color: black
+      border-left: 3px solid purple
+.logSin-parent
+  perspective: 1000px
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  width: 92vw
+  visibility: hidden
+  z-index: 1000 !important
+.logSin-container
+  //display: none
+  transform: translateX(100%) rotateY(90deg) scale(0.2)
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  width: 92vw
+  background: rgba(lightgrey,.9)
+  box-shadow: -2px 0 1rem rgba(black,.7)
+  z-index: 1000 !important
+  padding-top: 6.5rem
+  overflow: hidden
+  overflow-y: auto
+  transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+.slider
+  transform: translateX(0%)
+  visibility: visible
+.login-container, .signup-container
+  position: absolute
+  transition: all 500ms ease-in-out
+  width: 92vw
+.login-container
+  transform: translateX(0%)
+.brand
+  font-size: 2.5rem
+.logo
+  text-align: center
+.login-form, .signup-form
+  padding: 0 1.5rem
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  .expand
+    border-bottom: 2px solid white
+    &:after
+      background: blue
+.form-input
+  font-size: 1.8rem
+  color: black
+  width: 100%
+  //background: #eee
+  padding-left: 3.2rem
+  &:focus ~ i
+    color: black
+  
+.form-input::placeholder
+  color: rgba(black,.7)
+.ip
+  position: relative
+  margin-top: 3rem
+  i
+    position: absolute
+    top: 0
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    font-size: 2rem
+    color: rgba(black,0.3)
+    margin-left: .5rem
+    transition: all 500ms ease-in-out
+  &:first-child
+    margin-top: 2rem
+.login-btn, .signup-btn, .ca-btn, .navbar-login
+  outline: none
+  background: none
+  box-shadow: 0 0 10px 0px #337ab7, 0 0 0px 1px #337ab7
+  border: none
+  color: #23527c
+  font-size: 1.8rem
+  padding: .5rem 3rem
+  border-radius: 5rem
+  margin: auto
+  margin-top: 3.5rem
+  display: block
+  padding-top: .2rem
+  line-height: 3.5rem
+  transition: all 300ms ease-in-out
+  &:hover
+    background: #23527c
+    color: #fff
+.navbar-login
+  display: none
+.forgot
+  display: block
+  margin-top: 2rem 
+  text-align: center
+  a
+    color: gray
+    transition: all 300ms ease-in-out
+    font-family: monospace
+    &:hover
+        color: black
+.social-sign-msg, .sign-up-msg
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  text-align: center
+  margin-top: 1rem
+  hr
+    width: 20%
+    display: inline-block
+    background: red
+    margin: 0 .5rem
+  span
+    display: inline
+    margin: 0 1rem
+    vertical-align: -webkit-baseline-middle
+    font-size: 1.2rem
+.social-sign-in
+  text-align: center
+  margin-top: 1.5rem
+.box
+  //width: 10rem
+  background: grey
+  position: relative
+  display: inline-block
+  text-align: center
+  padding: .5rem 2rem
+  font-size: 1.5rem
+  border-radius: 0.25rem
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  a
+    color: white
+  &:before
+    content: ""
+    font-family: Material-Design-Iconic-Font
+    background: rgba(black,.2)
+    height: 100%
+    width: 2.7rem
+    line-height: 3.4rem
+    position: absolute
+    left: 0
+    top: 0
+    border-radius: 0.25rem
+    color: white
+.fb
+  background: #3b5998
+  width: 12rem
+  padding-left: 3.5rem
+  &:before
+    content: "\f343"
+.gl
+  background: #DD4B39
+  width: 10rem
+  padding-left: 3.4rem
+  &:before
+    content: "\f34e"
+.signup-btn
+  margin-bottom: 2rem
+.sign-up-msg
+  hr
+    width: 10%
+.ca-btn
+  margin-top: 1rem
+  font-size: 1.5rem
+  padding: .3rem 1.5rem
+  margin-bottom: 1rem
+.signup-container
+  transform: translateX(110%) scale(.5)
+  .login-btn
+    margin-top: 2rem
+    margin-bottom: 1rem
+    font-size: 1.8rem
+    padding: .4rem 2.5rem
+
+
+//poster
+body
+  padding-top: 70px
+  background: #eee
+.poster
+  width: 95%
+  //padding: .5rem
+  background: teal
+  background: white
+  box-shadow: 0 4px 15px 1px grey
+  margin: 0 auto
+.carousel-inner
+  .item img
+    width: 100%
+.carousel-control
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+  height: 3rem
+  width: 3rem
+  border-radius: 50%
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 2px;
+  background: rgba(black,0.5)
+  opacity: 0.5;
+  i
+    line-height: 3.2rem
+    margin: auto !important
+    font-size: 3rem
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+.zmdi-chevron-left
+  left: -.2rem
+.zmdi-chevron-right
+  right: -.2rem
+.left
+  left: 2rem
+.right  
+  right: 2rem !important
+
+.carousel-indicators 
+  display: none
+  border-radius: 0
+  width: 1.5rem
+  height: .5rem
+
+//events type
+.events-container, footer
+  margin-top: 10vw
+  width: 100%
+  //height: 50rem
+  background: teal
+  position: relative
+  padding-bottom: 5vw
+  &:before
+    content: ''
+    height: 10rem
+    width: 100%
+    position: absolute
+    top: 0
+    transform: skewY(-2.5deg)
+    transform-origin: 0
+    background: inherit
+    z-index: -10
+.types
+  padding: 1rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+.tp
+  background: #ddd
+  height: 35vw
+  width: 35vw
+  position: relative
+  border-radius: 50%
+  margin: 2.5rem 0
+  transition: all 300ms ease-in-out
+  box-shadow: 0 0 0 2px rgba(#615cc4,1), 0 2px 5px rgba(black,0.7)
+  &:hover
+    transform: scale(1.05)
+    box-shadow: 0 0 0 1px rgba(white,.8), 0 2px 15px rgba(black,0.8)
+  .ename
+    //background: red
+    position: absolute
+    color: white
+    font-size: 1.5rem
+    bottom: -2.8rem
+    left: 50%
+    transform: translateX(-50%)
+.tp-active
+  box-shadow: 0 0 0 5px teal,0 0 0 7px white
+.des
+  display: none
+.description
+  position: fixed
+  background: transparent
+  z-index: 1100
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: 1.5rem 1rem
+  border-radius: .2rem
+  opacity: 0
+  transition: box-shadow 1s ease
+  visibility: hidden
+  display: none
+  //box-shadow: 0 0 0 1px #EDE7F6, 0 5px 1.5rem 0px rgba(black,0.7)
+  .t1
+    //display: block
+.show-des
+  visibility: visible
+  display: block
+  opacity: 1
+  //box-shadow: 0 0 0 1px #EDE7F6, 0 5px 1.5rem 0px rgba(black,0.7)
+.des-text
+  overflow: hidden
+  overflow-y: auto
+  position: relative
+  height: 100%
+  width: 100%
+  padding: 1rem
+  visibility: hidden
+  opacity: 0
+  transition: opacity 1200ms ease
+.close-btn
+  position: absolute
+  top: -1rem
+  right: -.8rem
+  color: rgba(white,1)
+  text-shadow: 0 1px 3px rgba(black,.7)
+  z-index: 1
+.ripple-parent
+  //background: red
+  width: 100%
+  height: 100%
+  position: absolute
+  overflow: hidden
+  top: 0
+  left: 0
+.show
+  opacity: 1
+  visibility: visible
+.ripple
+  background: #F5F5F5
+  height: 35vw
+  width: 35vw
+  border-radius: 50%
+  position: absolute
+  //top: 50%
+  //left: 50%
+  //box-shadow: 0 0 0 250vw darken(#F5F5F5,15%) inset
+  //transform: translate(-50%,-50%)
+  transform: scale(2)
+.ripple-effect
+  animation: re 2s ease forwards
+
+@keyframes re
+  from
+    transform: scale(0.5)
+  to
+    //box-shadow: 0 0 0 0vw darken(#F5F5F5,15%) inset
+    transform: scale(10)
+//footer
+footer
+  height: 20rem
+  background: #303030
+  margin-top: 0
+  z-index: 1
+  .logo
+    position: relative
+    top: 1rem
+    span
+      color: white
+      margin-top: .1rem
+  .links
+    text-align: center
+    font-size: 1.6rem
+    margin-top: 3rem
+    a
+      color: grey
+      transition: all 300ms ease-in-out
+      &:hover
+        color: white
+  .social
+    margin-top: 2rem
+    ul
+      text-align: center
+      li
+        display: inline-block
+        border: 1px solid grey
+        border-radius: 50%
+        width: 3.5rem
+        height: 3.5rem
+        margin: 0 .5rem 0 .5rem
+        transition: all 300ms ease-in-out
+        &:hover
+          border-color: white
+          >a>i
+            color: white
+        a
+          line-height: 4rem
+          i
+            font-size: 2.2rem
+            color: grey
+            transition: all 300ms ease-in-out
+
+//for desktop
+@media (min-width:768px)
+  nav
+    height: 75px
+  .container-fluid
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+  .collapse
+    background: #f8f8f8
+  ul.nav.navbar-nav
+    float: right
+    li
+      a
+        padding-top: 15px
+        padding-bottom: 6px
+        &:hover
+          border: none
+          border-bottom: 2px solid teal
+      .active
+        border: none
+        border-bottom: 2px solid purple
+  .form-group
+    width: 15vw !important
+  .navbar-login
+    display: block
+    background: none
+    float: right
+    position: relative
+    left: 1rem
+    margin-top: 1.2rem
+    font-size: 1.5rem
+    font-variant: small-caps
+    padding: .3rem .7rem
+    line-height: 2rem
+    transition: all 300ms ease-in-out
+    &:hover
+      background: #23527c !important
+      color: #fff
+  .logSin-container
+    width: 30rem
+    padding-top: 8rem
+  .login-container, .signup-container, .logSin-parent
+    width: 30rem
+  .poster
+    width: 85%
+    margin-top: 2rem
+    margin-bottom: 6.5vw
+  .carousel-control
+    height: 5rem
+    width: 5rem
+    i
+      font-size: 5rem
+  .carousel-indicators
+    display: inline-block
+    margin: auto
+    width: auto
+  .carousel-indicators
+    li
+      width: 2rem
+      height: .5rem
+      border-radius: 0
+      margin: auto
+    .active
+      width: 2rem
+      height: .5rem
+      background: #fff
+  .types
+    width: 50vw
+    height: 31vw
+  .tp
+    width: 10vw
+    height: 10vw
+    &:nth-child(-n+4)
+      margin-bottom: 5vw
+  .events-container
+    display: flex
+    flex-wrap: nowrap
+    flex-direction: row
+    padding: 2.5rem 0rem 8vw 0rem
+    margin-top: 0
+  .des-text
+    opacity: 1
+    visibility: visible
+    overflow: hidden
+    overflow-y: auto
+    .t1
+      display: block
+  .description
+    display: block
+    opacity: 1
+    visibility: visible
+    height: 31vw
+    position: relative
+    width: 46.5vw
+    z-index: 1
+    margin: 0 1rem
+  .close-btn
+    display: none
+  footer
+    .logo
+      text-align: center
+      //background: red
+      display: inline-block
+      position: relative
+      top: 7rem
+      left: 3.5rem
+    .social
+      position: absolute
+      //background: red
+      top: -5.2vw
+      right: 2rem
+      margin-top: 2.7vw
+      ul > li
+        display: block
+        margin: .5rem .5rem

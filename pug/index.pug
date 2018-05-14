@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  title Turing
+  link(rel="stylesheet",href="css/bootstrap.min.css")
+  link(rel="stylesheet",href="css/material-design-iconic-font.min.css")
+  link(rel="stylesheet",href="css/style.css")
+body
+  wrapper
+    include header.pug
+    .poster
+      #carousel-example-generic.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#carousel-example-generic', data-slide-to='0')
+          li(data-target='#carousel-example-generic', data-slide-to='1')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            img(src="./images/Rocks.jpg", alt="Rocks")
+            .carousel-caption
+          .item
+            img(src="./images/Fall-Leaves.jpg", alt="leaves")
+            .carousel-caption
+          // Controls
+        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+          <i class="zmdi zmdi-chevron-left"></i>
+          span.sr-only Previous
+        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+          <i class="zmdi zmdi-chevron-right"></i>
+          span.sr-only Next
+    .events-container
+      .event-types
+        .types
+          .tp.t1.tp-active
+            span.ename COC
+          .tp.t2
+            span.ename NITDPL
+          .tp.t3
+            span.ename CodeGolf
+          .tp.t4
+            span.ename RevCod
+          .tp.t5
+            span.ename CTF
+          .tp.t6
+            span.ename TreHunt
+          .tp.t7
+            span.ename Hackathon
+          .tp.t8
+            span.ename Workshops
+      .description
+        .close-btn
+          <i class="zmdi zmdi-close-circle"></i>
+        .ripple-parent
+          .ripple   
+        .des-text
+          .des.t1
+            p  t1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima similique accusamus, ex, ut dolor, voluptatum voluptatem dolorem quasi ipsum aperiam amet quam pariatur modi provident voluptates recusandae doloribus ullam placeat!
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?
+
+          .des.t2
+            p  t2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aperiam necessitatibus quibusdam sapiente eveniet obcaecati quasi explicabo, quae ad temporibus, labore. Vitae tempore repudiandae repellat, ab eum totam, possimus molestias!
+          .des.t3
+            p  t3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sapiente. Repudiandae ipsum repellat quod vero rem, ad eum officia quidem eaque nobis, laudantium ex. Ullam sunt adipisci dolor praesentium error.
+          .des.t4
+            p  t4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ea dolorem, earum nemo dolor assumenda voluptatibus eligendi similique quos cupiditate, tempore iusto rerum incidunt sit autem. Quo laboriosam illum ad!
+          .des.t5 
+            p t5
+          .des.t6
+            p t6
+          .des.t7
+            p t7
+          .des.t8
+            p t8   
+    include footer.pug
+  script(type="text/javascript",src="js/jquery-3.1.1.min.js")
+  script(type="text/javascript",src="js/bootstrap.min.js")
+  script(type="text/javascript",src="js/main.js")

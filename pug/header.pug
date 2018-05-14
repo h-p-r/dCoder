@@ -1,0 +1,102 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button.menu-btn.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+        span.sr-only
+        span.icon-bar
+        span.icon-bar.shift
+        span.icon-bar
+      button.login.navbar-toggle.collapsed(type="button", onclick="slide()")
+        <i class="zmdi zmdi-account"></i>
+      a.navbar-brand(href='#') dCoder
+    // Collect the nav links, forms, and other content for toggling
+    .bs-example-navbar-collapse-1.collapse.navbar-collapse
+      button.login.navbar-login(type="button", onclick="slide()") Login
+      form.navbar-form.navbar-right
+        .form-group
+          .search-input
+            input.form-control.nav-form(type='search', placeholder='Search')
+            .expand
+          .search-btn
+            button.nav-search(type='submit')
+              <i class="zmdi zmdi-search"></i>
+      ul.nav.navbar-nav
+        li
+          a.active(href='#') Learn
+        li
+          a(href='#') Timeline
+        li
+          a(href='#') CP
+        li
+          a(href='#') Achievements
+        li
+          a(href='#') Our Team
+    // /.navbar-collapse
+  // /.container-fluid
+.logSin-parent
+  .logSin-container
+    .login-container
+      .logo
+        a.brand(href='#') dCoder
+      form.login-form
+        .ip.email
+          input.form-input(type='email', placeholder='Email Id')
+          .expand
+          <i class="zmdi zmdi-email"></i>
+        .ip.pass
+          input.form-input(type='password', placeholder='Password')
+          .expand
+          <i class="zmdi zmdi-lock"></i>
+        button.login-btn(type="submit") Log in
+        .forgot
+          a(href="#") Forgot your password ?
+      .social-sign-msg
+        hr
+        span Or Connect With
+        hr
+      .social-sign-in
+        .fb.box
+          a(href="#") Facebook
+        .gl.box
+          a(href="#") Google
+      .sign-up-msg
+        hr
+        span Don't Have an Account
+        hr
+      button.ca-btn(type="submit") Create Account
+    .signup-container
+      .logo
+        a.brand(href='#') dCoder
+      form.signup-form
+        .ip.name
+          input.form-input(type='text', placeholder='Full Name')
+          .expand
+          <i class="zmdi zmdi-account-box"></i>
+        .ip.email
+          input.form-input(type='email', placeholder='Email Id')
+          .expand
+          <i class="zmdi zmdi-email"></i>
+        .ip.pass
+          input.form-input(type='password', placeholder='Password')
+          .expand
+          <i class="zmdi zmdi-lock"></i>
+        .ip.cpass
+          input.form-input(type='password', placeholder='Confirm Password')
+          .expand
+          <i class="zmdi zmdi-lock"></i>
+        button.signup-btn(type="submit") Sign up
+      .social-sign-msg
+        hr
+        span Or Connect With
+        hr
+      .social-sign-in
+        .fb.box
+          a(href="#") Facebook
+        .gl.box
+          a(href="#") Google
+      .sign-up-msg
+        hr
+        span Have an Account
+        hr
+      button.login-btn.signup-login-btn(type="submit") Log in

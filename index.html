@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turing</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/material-design-iconic-font.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <wrapper>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header">
+          <button class="menu-btn navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar shift"></span><span class="icon-bar"></span></button>
+          <button class="login navbar-toggle collapsed" type="button" onclick="slide()"><i class="zmdi zmdi-account"></i></button><a class="navbar-brand" href="#">dCoder</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling-->
+        <div class="bs-example-navbar-collapse-1 collapse navbar-collapse">
+          <button class="login navbar-login" type="button" onclick="slide()">Login</button>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <div class="search-input">
+                <input class="form-control nav-form" type="search" placeholder="Search"/>
+                <div class="expand"></div>
+              </div>
+              <div class="search-btn">
+                <button class="nav-search" type="submit"><i class="zmdi zmdi-search"></i></button>
+              </div>
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li><a class="active" href="#">Learn</a></li>
+            <li><a href="#">Timeline</a></li>
+            <li><a href="#">CP</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse-->
+      </div>
+      <!-- /.container-fluid-->
+    </nav>
+    <div class="logSin-parent">
+      <div class="logSin-container">
+        <div class="login-container">
+          <div class="logo"><a class="brand" href="#">dCoder</a></div>
+          <form class="login-form">
+            <div class="ip email">
+              <input class="form-input" type="email" placeholder="Email Id"/>
+              <div class="expand"></div><i class="zmdi zmdi-email"></i>
+            </div>
+            <div class="ip pass">
+              <input class="form-input" type="password" placeholder="Password"/>
+              <div class="expand"></div><i class="zmdi zmdi-lock"></i>
+            </div>
+            <button class="login-btn" type="submit">Log in</button>
+            <div class="forgot"><a href="#">Forgot your password ?</a></div>
+          </form>
+          <div class="social-sign-msg">
+            <hr/><span>Or Connect With</span>
+            <hr/>
+          </div>
+          <div class="social-sign-in">
+            <div class="fb box"><a href="#">Facebook</a></div>
+            <div class="gl box"><a href="#">Google</a></div>
+          </div>
+          <div class="sign-up-msg">
+            <hr/><span>Don't Have an Account</span>
+            <hr/>
+          </div>
+          <button class="ca-btn" type="submit">Create Account</button>
+        </div>
+        <div class="signup-container">
+          <div class="logo"><a class="brand" href="#">dCoder</a></div>
+          <form class="signup-form">
+            <div class="ip name">
+              <input class="form-input" type="text" placeholder="Full Name"/>
+              <div class="expand"></div><i class="zmdi zmdi-account-box"></i>
+            </div>
+            <div class="ip email">
+              <input class="form-input" type="email" placeholder="Email Id"/>
+              <div class="expand"></div><i class="zmdi zmdi-email"></i>
+            </div>
+            <div class="ip pass">
+              <input class="form-input" type="password" placeholder="Password"/>
+              <div class="expand"></div><i class="zmdi zmdi-lock"></i>
+            </div>
+            <div class="ip cpass">
+              <input class="form-input" type="password" placeholder="Confirm Password"/>
+              <div class="expand"></div><i class="zmdi zmdi-lock"></i>
+            </div>
+            <button class="signup-btn" type="submit">Sign up</button>
+          </form>
+          <div class="social-sign-msg">
+            <hr/><span>Or Connect With</span>
+            <hr/>
+          </div>
+          <div class="social-sign-in">
+            <div class="fb box"><a href="#">Facebook</a></div>
+            <div class="gl box"><a href="#">Google</a></div>
+          </div>
+          <div class="sign-up-msg">
+            <hr/><span>Have an Account</span>
+            <hr/>
+          </div>
+          <button class="login-btn signup-login-btn" type="submit">Log in</button>
+        </div>
+      </div>
+    </div>
+    <div class="poster">
+      <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+        <!-- Indicators-->
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel-example-generic" data-slide-to="0"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+        <!-- Wrapper for slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active"><img src="./images/Rocks.jpg" alt="Rocks"/>
+            <div class="carousel-caption"></div>
+          </div>
+          <div class="item"><img src="./images/Fall-Leaves.jpg" alt="leaves"/>
+            <div class="carousel-caption"></div>
+          </div>
+          <!-- Controls-->
+        </div><a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"><i class="zmdi zmdi-chevron-left"></i><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><i class="zmdi zmdi-chevron-right"></i><span class="sr-only">Next</span></a>
+      </div>
+    </div>
+    <div class="events-container">
+      <div class="event-types">
+        <div class="types">
+          <div class="tp t1 tp-active"><span class="ename">COC</span></div>
+          <div class="tp t2"><span class="ename">NITDPL</span></div>
+          <div class="tp t3"><span class="ename">CodeGolf</span></div>
+          <div class="tp t4"><span class="ename">RevCod</span></div>
+          <div class="tp t5"><span class="ename">CTF</span></div>
+          <div class="tp t6"><span class="ename">TreHunt</span></div>
+          <div class="tp t7"><span class="ename">Hackathon</span></div>
+          <div class="tp t8"><span class="ename">Workshops</span></div>
+        </div>
+      </div>
+      <div class="description">
+        <div class="close-btn"><i class="zmdi zmdi-close-circle"></i></div>
+        <div class="ripple-parent">
+          <div class="ripple">  </div>
+        </div>
+        <div class="des-text">
+          <div class="des t1">
+            <p> t1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima similique accusamus, ex, ut dolor, voluptatum voluptatem dolorem quasi ipsum aperiam amet quam pariatur modi provident voluptates recusandae doloribus ullam placeat!</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum soluta tempora ducimus accusantium dolor minima doloremque eius consequuntur, a quaerat sed voluptatibus quidem architecto laborum, fuga voluptate, cupiditate animi ad?</p>
+          </div>
+          <div class="des t2">
+            <p> t2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aperiam necessitatibus quibusdam sapiente eveniet obcaecati quasi explicabo, quae ad temporibus, labore. Vitae tempore repudiandae repellat, ab eum totam, possimus molestias!</p>
+          </div>
+          <div class="des t3">
+            <p> t3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sapiente. Repudiandae ipsum repellat quod vero rem, ad eum officia quidem eaque nobis, laudantium ex. Ullam sunt adipisci dolor praesentium error.</p>
+          </div>
+          <div class="des t4">
+            <p> t4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ea dolorem, earum nemo dolor assumenda voluptatibus eligendi similique quos cupiditate, tempore iusto rerum incidunt sit autem. Quo laboriosam illum ad!</p>
+          </div>
+          <div class="des t5"> 
+            <p>t5</p>
+          </div>
+          <div class="des t6">
+            <p>t6</p>
+          </div>
+          <div class="des t7">
+            <p>t7</p>
+          </div>
+          <div class="des t8">
+            <p>t8   </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="logo"><a class="brand" href="#">dCoder</a><br/><span>Coding Club NIT Delhi</span></div>
+      <div class="links"><a href="#">About us</a><br/><a href="#">Contact us</a></div>
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+          <li> <a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+          <li>   <a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+          <li>   <a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+          <li>  <a href="#"><i class="zmdi zmdi-youtube-play"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </wrapper>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
